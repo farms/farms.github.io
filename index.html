@@ -41,6 +41,112 @@
             </div>
         </div>
     </header><!--/header-->
+
+    <div class="modal fade" id="modal-id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center emerald">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Entrar na sua conta</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- LOGIN AND REGISTER -->
+                        <div class="col-md-6 modal-body-left">
+                            <div role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Entrar</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#register" aria-controls="register" role="tab" data-toggle="tab">Registrar</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <!-- LOGIN PANEL -->
+                                    <div role="tabpanel" class="tab-pane fade in active" id="login">
+                                        <form id="loginForm" action="" method="POST" class="form-inline" role="form">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="email" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1" name="email">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1" name="password">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <button type="submit" class="btn btn-success btn-block btn-lg">Entrar</button>
+                                            <div class="form-group col-xs-12 text-center">
+                                                <a href="#" class="login-link">Esqueceu sua senha?</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- REGISTER PANEL -->
+                                    <div role="tabpanel" class="tab-pane fade" id="register">
+                                        <form id="registerForm" action="" method="POST" class="form-inline" role="form">
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1" name="name">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="email" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1" name="email">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1" name="password">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="input-group input-group-lg">
+                                                    <input type="password" class="form-control" placeholder="Senha (confirme)" aria-describedby="basic-addon1" name="repassword">
+                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+                                                </div>
+                                            </div>
+                                            
+                                            <button type="submit" class="btn btn-success btn-block btn-lg">Registrar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- SOCIAL STUFF -->
+                        <div class="col-md-6">
+                            <div class="modal-social-icons">
+                                <a href="#" class="btn btn-default facebook"> <i class="fa fa-facebook fa-lg modal-icons"></i> Entrar com o Facebook </a>
+                                <a href="#" class="btn btn-default twitter"> <i class="fa fa-twitter fa-lg modal-icons"></i> Entrar com o Twitter </a>
+                                <a href="#" class="btn btn-default google"> <i class="fa fa-google-plus fa-lg modal-icons"></i> Entrar com o Google </a>
+                                <a href="#" class="btn btn-default linkedin"> <i class="fa fa-linkedin fa-lg modal-icons"></i> Entrar com o Linkedin </a>
+                            </div> 
+                        </div>
+                        <div class="hidden-xs center-line"> OU </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                    
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     
     <section id="main-slider" class="no-margin">
         <div class="carousel slide wet-asphalt">
@@ -58,7 +164,7 @@
                                     <h2 class="animation animated-item-1">Ferramenta de Apoio à Revisão e Mapeamento Sistemático</h2>
                                     <p class="animation animated-item-2">
                                         <button type="button" class="btn btn-primary">CADASTRAR</button>
-                                        <button type="button" class="btn btn-danger">ENTRAR</button>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" href="#modal-id">ENTRAR</button>
                                     </p>
                                 </div>
                             </div>
@@ -155,27 +261,35 @@
         <div class="row">
             <div class="col-md-6 media-content">
                 <div class="media">
-                    <a class="pull-left col-xs-7" href="javascript:void(0)">
-                        <video class="video-js" preload="auto" poster="images/media/video-cover.jpg" data-setup="{}">
-                            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.mp4" type="video/mp4">
-                            <source src="http://iurevych.github.com/Flat-UI-videos/big_buck_bunny.webm" type="video/webm">
+                    <div class="media-left col-xs-7">
+                        <video class="video-js media-object" preload="auto" poster="images/media/video-cover.jpg" data-setup="{}">
+                            <source src="videos/big_buck_bunny.mp4" type="video/mp4">
+                            <source src="videos/big_buck_bunny.webm" type="video/webm">
                         </video>
-                    </a>
-                    <div class="media-body col-xs-5">
-                        <h3 class="media-heading">Introdução</h3>
-                        <p class="text-justify">Entenda exatamente do que se trata a FARMS - Ferramenta de Apoio à Revisão e Mapeamento Sistemática</p>
+                    </div>
+                    
+                    <div class="col-xs-5">
+                        <div class="media-body">
+                            <h3 class="media-heading">Introdução</h3>
+                            <p>Entenda exatamente do que se trata a FARMS - Ferramenta de Apoio à Revisão e Mapeamento Sistemática</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-6 media-content">
                 <div class="media">
-                    <a class="pull-left col-xs-7" href="javascript:void(0)">
-                        <img src="images/media/slide-cover.jpg" class="img-responsive" alt="Slide">
-                    </a>
-                    <div class="media-body col-xs-5">
-                        <h3 class="media-heading">Apresentação</h3>
-                        <p class="text-justify">Mussum ipsum cacilds, vidis litro abertis. Leite divinis bolis eu num gostis, monti palavris i pareci latim.</p>
+                    <div class="media-left col-xs-7">
+                        <a href="javascript:void(0)">
+                            <img src="images/media/slide-cover.jpg" class="media-object img-responsive" alt="Slide">
+                        </a>
+                    </div>
+                    
+                    <div class="col-xs-5">
+                        <div class="media-body">
+                            <h3 class="media-heading">Apresentação</h3>
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Leite divinis bolis eu num gostis, monti palavris i pareci latim.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,14 +334,14 @@
     <section id="bottom" class="wet-asphalt">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+                <div class="hidden-xs col-md-3 col-sm-6">
                     <h4> </h4>
                     <p>
                         <i class="fa fa-leanpub fa-5x"></i>
                     </p>
                 </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-xs-4 col-md-3 col-sm-6">
                     <h4>Bloco 1</h4>
                     <div>
                         <ul class="arrow">
@@ -238,8 +352,8 @@
                     </div>
                 </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
-                    <h4>Bloco 1</h4>
+                <div class="col-xs-4 col-md-3 col-sm-6">
+                    <h4>Bloco 2</h4>
                     <div>
                         <ul class="arrow">
                             <li><a href="#">Link 1</a></li>
@@ -249,7 +363,7 @@
                     </div>
                 </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-xs-4 col-md-3 col-sm-6">
                     <h4>Bloco 3</h4>
                     <address>
                         <strong>Setor</strong><br>

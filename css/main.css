@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import url(../fonts/roboto/roboto-400-700-300.css);
 .clearfix {
   *zoom: 1;
 }
@@ -451,6 +451,8 @@ body > section {
   font-size: 25px;
   font-weight: lighter;
   height: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 #newsletter input[type="email"]::-webkit-input-placeholder { color: #fff; }
 #newsletter input[type="email"]:-moz-placeholder { color: #fff; }
@@ -852,29 +854,37 @@ ul.tag-cloud li {
 .modal {
   border: 0;
 }
-.modal#loginForm {
-  width: 600px;
-  margin-left: -300px;
-}
 .modal .modal-header {
   border: 0;
-  padding: 20px 20px 0;
+  /*padding: 20px 20px 0;*/
 }
-.modal .modal-header > h4 {
+.modal .modal-header > h2 {
   font-weight: 300;
-  font-size: 14px;
-  color: #848484;
-  text-transform: uppercase;
+  font-size: 30px;
+  color: #fff;
   margin: 0;
 }
 .modal .modal-body {
   padding: 20px;
 }
+.modal .modal-body-left {
+  padding-right: 4%;
+  border-right: 4px solid #ddd;
+}
+.modal .modal-social-icons {
+  padding: 0 10%;
+}
+.facebook, .twitter, .google, .linkedin {width:100%;height:40px; padding-top:10px; margin-top:4%;}
+.modal-icons{margin-left: -10px; margin-right: 20px;}
+.google, .google:hover{background-color:#dd4b39;border:2px solid #dd4b39;color:#fff;}
+.twitter, .twitter:hover{ background-color: #00aced; border:2px solid #00aced;color: #fff;}
+.facebook, .facebook:hover{background-color: #3b5999; border:2px solid #3b5999;color:#fff;}
+.linkedin, .linkedin:hover{background-color: #007bb6; border: 2px solid #007bb6; color:#fff;}
+.modal .modal-body .form-group { margin-top: 10px; }
 .modal input[type="text"],
 .modal input[type="password"] {
   padding: 5px 10px;
   min-height: 30px;
-  width: 130px;
   margin-right: 10px;
 }
 .modal .icon-remove {
@@ -894,8 +904,18 @@ ul.tag-cloud li {
   cursor: pointer;
 }
 .modal button {
-  margin-left: 10px;
-  border: 0;
+  margin-top: 10px;
+}
+
+.modal .login-link { color: #428bca; }
+.modal .login-link:hover{ text-decoration: underline; }
+.center-line {
+  position: absolute;
+  right: 285px;
+  top: 120px;
+  background: #ddd;
+  border: 4px solid #DDDDDD;
+  border-radius: 20px;
 }
 .gap {
   margin-bottom: 50px;
