@@ -27,7 +27,7 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 10px; /*80*/
+  padding-top: 70px; /*80*/
   color: #34495e;
   background: #f5f5f5;
   font-family: 'Roboto', sans-serif;
@@ -329,15 +329,21 @@ body > section {
 }
 #main-slider .carousel h2 {
   font-size: 36px;
+  font-weight: 300;
 }
 #main-slider .carousel .btn {
-  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-width: 2px;
   color: #fff;
-  border-radius: 0;
+  border-radius: 4px;
   margin-top: 5px;
+  outline: none;
 }
 #main-slider .carousel .btn:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+#main-slider .carousel .btn-danger:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  /*color: #FFF*/
 }
 #main-slider .carousel .boxed {
   padding: 10px 15px;
@@ -354,7 +360,7 @@ body > section {
   position: absolute;
   width: 100%;
   display: block !important;
-  height: 600px;
+  height: 300px;
   -webkit-transition: opacity ease-in-out 500ms;
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -1142,6 +1148,7 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+.contact-image { position:absolute; bottom: -525px;}
 /*VIDEO*/
 .media-content { padding: 0; margin-top: 30px; }
 .media-object { margin-bottom: 10px; }
