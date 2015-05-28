@@ -1142,14 +1142,12 @@ ul.faq li > div h3 {
   margin-top: 150px;
   margin-bottom: 150px;
 }
-.mt { margin-top:40px }
 /*VIDEO*/
 .media-content { padding: 0; margin-top: 30px; }
-.media-content a.pull-left { margin: 0; padding-right: 0; }
+.media-object { margin-bottom: 10px; }
 .video-js {
   background-color: transparent;
   position: relative;
-  padding-bottom: 47px;
   font-size: 0;
   vertical-align: middle;
   overflow: hidden;
