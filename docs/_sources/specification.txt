@@ -1,0 +1,162 @@
+Especificações
+###################
+
+Por ser uma ferramenta que busca auxiliar a comunidade acadêmica na realização
+de suas revisões e/ou mapeamentos sistemáticos, a FARMS implementa os rígidos
+protocolos presentes nestas atividades. Nesta página você encontrará todas as
+especificações de software que desenvolvemos até o momento, desta forma, você
+poderá entender melhor como a ferramenta funciona e caso deseje, poderá prestar
+contribuições mais significativas para a sua construção.
+
+Modelo Conceitual
+*******************
+
+Definição do Projeto
+====================
+
+.. figure:: img/diagrams/conceptual_model/project_definition.jpg
+   :alt: Definição do Projeto
+
+Protocolo do Projeto
+====================
+
+.. figure:: img/diagrams/conceptual_model/project_protocol.jpg
+   :alt: Protocolo do Projeto
+   :align: center
+
+   `Ver Protocolo do Projeto ampliado <_images/project_protocol.jpg>`_
+
+Identificação dos Estudos
+=========================
+
+.. figure:: img/diagrams/conceptual_model/studies_identification.jpg
+   :alt: Identificação dos Estudos
+   :align: center
+
+   `Ver Identificação dos Estudos ampliada <_images/studies_identification.jpg>`_
+
+Etapa de Seleção
+====================
+
+.. figure:: img/diagrams/conceptual_model/selection_step.jpg
+   :alt: Etapa de Seleção
+   :align: center
+
+   `Ver Etapa de Seleção ampliada <_images/selection_step.jpg>`_
+
+Extração dos Dados
+====================
+
+.. figure:: img/diagrams/conceptual_model/data_extraction.jpg
+   :alt: Extração dos Dados
+   :align: center
+
+   `Ver Extração dos Dados ampliada <_images/data_extraction.jpg>`_
+
+Casos de Uso
+************
+
+Funcionalidades da Definição do Projeto
+=======================================
+
+.. figure:: img/diagrams/use_case/project_definition_step_features.jpg
+   :alt: Caso de Uso Definição do Projeto
+   :align: center
+
+   `Ver Caso de Uso Definição do Projeto ampliado <_images/project_definition_step_features.jpg>`_
+
+Funcionalidades da Identificação dos Estudos
+============================================
+
+.. figure:: img/diagrams/use_case/studies_identification_step_features.jpg
+   :alt: Caso de Uso Identificação dos Estudos
+   :align: center
+
+   `Ver Caso de Uso Identificação dos Estudos ampliado <_images/studies_identification_step_features.jpg>`_
+
+Funcionalidades da Etapa de Seleção
+===================================
+
+.. figure:: img/diagrams/use_case/selection_step_features.jpg
+   :alt: Caso de Uso Etapa de Seleção
+   :align: center
+
+   `Ver Caso de Uso Etapa de Seleção ampliado <_images/selection_step_features.jpg>`_
+
+Funcionalidades da Etapa de Extração
+====================================
+
+.. figure:: img/diagrams/use_case/extraction_step_features.jpg
+   :alt: Caso de Uso Etapa de Extração
+   :align: center
+
+   `Ver Caso de Uso Etapa de Extração ampliado <_images/extraction_step_features.jpg>`_
+
+Diagrama de Atividades
+**********************
+
+Processo Geral
+==============
+
+.. figure:: img/diagrams/activity_diagrams/general_process.jpg
+   :alt: Processo Geral
+   :align: center
+
+   `Ver Processo Geral ampliado <_images/general_process.jpg>`_
+
+Diagrama de Estados
+*******************
+
+Estados Gerais dos Estudos
+==========================
+
+.. figure:: img/diagrams/state_diagrams/study_general_status.jpg
+   :alt: Estados Gerais dos Estudos
+   :align: center
+
+   `Ver Estados Gerais dos Estudos ampliado <_images/study_general_status.jpg>`_
+
+Estados da Seleção dos Estudos
+==============================
+
+.. figure:: img/diagrams/state_diagrams/study_selection_result_status.jpg
+   :alt: Estados da Seleção dos Estudos
+   :align: center
+
+   `Ver Estados da Seleção dos Estudos ampliado <_images/study_selection_result_status.jpg>`_
+
+Estados da Revisão da Seleção
+=============================
+
+.. figure:: img/diagrams/state_diagrams/review_selection_status.jpg
+   :alt: Estados da Revisão da Seleção
+   :align: center
+
+   `Ver Estados da Revisão da Seleção ampliado <_images/review_selection_status.jpg>`_
+
+Estados da Etapa de Seleção
+===========================
+
+.. figure:: img/diagrams/state_diagrams/selection_step_status.jpg
+   :alt: Estados da Etapa de Seleção
+   :align: center
+
+   `Ver Estados da Etapa de Seleção ampliado <_images/selection_step_status.jpg>`_
+
+Estados da Extração
+===================
+
+.. figure:: img/diagrams/state_diagrams/extraction_status.jpg
+   :alt: Estados da Extração
+   :align: center
+
+   `Ver Estados da Extração ampliado <_images/extraction_status.jpg>`_
+
+Estados da Etapa de Extração
+============================
+
+.. figure:: img/diagrams/state_diagrams/extraction_step_status.jpg
+   :alt: Estados da Etapa de Extração
+   :align: center
+
+   `Ver Estados da Etapa de Extração ampliado <_images/extraction_step_status.jpg>`_

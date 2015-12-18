@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Começando &mdash; Documentação FARMS 0.0.1</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/readthedocs_custom.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="Documentação FARMS 0.0.1" href="index.html"/>
+        <link rel="next" title="Especificações" href="specification.html"/>
+        <link rel="prev" title="Documentação FARMS" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FARMS
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Começando</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalacao">Instalação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#executando">Executando</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="specification.html">Especificações</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">FARMS</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Começando</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/starting.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>FARMS significa Ferramenta de Apoio à Revisão e ao Mapeamento Sistemático e
+trata-se de uma aplicação web que visa facilitar o trabalho da comunidade
+acadêmica em seus projetos de pesquisa, fornecendo uma solução colaborativa para
+o levantamento das bibliografias a respeito de um determinado tema, em específico
+, a realização de revisões sistemáticas e mapeamentos sistemáticos.</p>
+<div class="section" id="comecando">
+<h1>Começando<a class="headerlink" href="#comecando" title="Link permanente para este título">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">A priore, nosso desejo é disponibilizar um serviço online totalmente gratuito
+, porém a ferramenta ainda não está pronta para ser disponibilizada à
+comunidade acadêmica. Portanto, se você não é um desenvolvedor da área de TI,
+talvez os conteúdos aqui documentados não signifiquem muita coisa para você.
+Mas não se preocupe, assim que a ferramenta estiver disponível não somente
+para os desenvolvedores, iremos escrever todo o material necessário para que
+você possa tirar maior proveito de todas as funcionalidades.</p>
+</div>
+<p>Você precisará dos seguintes itens:</p>
+<ul class="simple">
+<li>Arquivos da aplicação web e do webservice (links mais adiante).</li>
+<li>Ter o Java instalado em sua máquina. <a class="reference external" href="http://www.java.com/">Download Java</a></li>
+<li>Apache Tomcat (recomendamos a versão 8). <a class="reference external" href="http://tomcat.apache.org/download-80.cgi">Download Tomcat</a></li>
+<li>PostgreSQL. <a class="reference external" href="http://www.postgresql.org/download/">Download PostgreSQL</a></li>
+</ul>
+<div class="section" id="instalacao">
+<h2>Instalação<a class="headerlink" href="#instalacao" title="Link permanente para este título">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Obtenha os códigos da <a class="reference external" href="https://github.com/farms/farms-webapp">aplicação web</a>
+em nosso repositório no GitHub no link a seguir:
+<a class="reference external" href="https://github.com/farms/farms-webapp/archive/master.zip">farms-webapp</a>.
+Ou clone por meio do git através da linha de comando utilizando
+<code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/farms/farms-webapp.git</span></code></p>
+</li>
+<li><p class="first">Também obtenha os códigos do <a class="reference external" href="https://github.com/farms/farms-webservice">webservice</a>
+no link a seguir: <a class="reference external" href="https://github.com/farms/farms-webservice/archive/master.zip">farms-webservice</a>.
+Ou clone por meio do git utilizando o comando <code class="docutils literal"><span class="pre">https://github.com/farms/farms-webservice.git</span></code></p>
+</li>
+<li><p class="first">Nos arquivos do webservice, navegue até o diretório <code class="docutils literal"><span class="pre">/src/main/resourcers/META-INF/</span></code>
+e abra o arquivo <code class="docutils literal"><span class="pre">persistence.xml</span></code>. Em seguida edite-o alterando as linhas a
+seguir substituindo os valores &#8216;root&#8217; pelas suas credenciais de acesso ao
+PostgreSQL.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;javax.persistence.jdbc.user&quot;</span> <span class="na">value=</span><span class="s">&quot;root&quot;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&quot;javax.persistence.jdbc.password&quot;</span> <span class="na">value=</span><span class="s">&quot;root&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="executando">
+<h2>Executando<a class="headerlink" href="#executando" title="Link permanente para este título">¶</a></h2>
+<p>Após feito o download dos arquivos e inserido as credenciais de acesso ao banco
+de dados você poderá executar o projeto.</p>
+<ol class="arabic simple">
+<li>Crie uma base de dados com o nome Farms em seu PostgreSQL.</li>
+<li>Execute o WebService. Neste momento, as tabelas deverão ser <em>automagicamente</em>
+criadas em seu banco de dados.</li>
+<li>Inicie o WebApp através do servidor Tomcat.</li>
+<li>Pronto! Agora basta acessar o endereço no qual o Apache Tomcat está executando
+a aplicação. Normalmente localhost:8080.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="specification.html" class="btn btn-neutral float-right" title="Especificações" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Documentação FARMS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, The FARMS Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
