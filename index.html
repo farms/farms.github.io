@@ -1,391 +1,325 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<!--[if lt IE 7]><html lang="pt-BR" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="pt-BR" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="pt-BR" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="pt-BR" class="no-js">
+<!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alguma descrição">
-    <meta name="author" content="">
-    <title>FARMS | Ferramenta de Apoio à Revisão e Mapeamento Sistemático</title>
-    <link href="css/bootstrap2.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>FARMS &mdash; Ferramenta de Apoio à Revisão e Mapeamento Sistemático</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Bootstrap 3.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
 <body>
-    <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">FARMS</a>
+    <div class="pre-loader">
+        <div class="load-con">
+            <img src="assets/img/farms_logo.png" class="animated fadeInDown" alt="">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Início</a></li>
-                    <li><a href="docs/" target="_blank">Documentação</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+        </div>
+    </div>
+   
+    <header> 
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="fa fa-bars fa-lg"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/farms_logo.png" alt="" class="logo">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#getApp">Documentação</a></li>
+                        <li><a href="#support">Newsletter</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-->
+        </nav>
+
+        <!--RevSlider-->
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                    <!-- SLIDE 1 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfb fadeout hidden-xs"
+                            data-x="center"
+                            data-y="bottom"
+                            data-hoffset="0"
+                            data-voffset="0"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/eco/Slides/farms-slide2.png" alt="">
+                        </div>
+                        
+                        <div class="tp-caption mediumlarge_light_white sft" data-x="center" data-y="230" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                            Ferramenta de Apoio a Revisão e Mapeamento Sistemático
+                        </div>
+                        <div class="tp-caption sfb hidden-xs" data-x="350" data-y="300" data-hoffset="0" data-voffset="85" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                            <a href="#about" class="btn btn-primary inverse btn-lg">SAIBA MAIS</a>
+                        </div>
+                        <div class="tp-caption sfr hidden-xs" data-x="530" data-y="300" data-hoffset="0" data-voffset="85" data-speed="1500" data-start="1900" data-easing="Power4.easeOut">
+                            <a href="docs/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-life-bouy"></i> DOCUMENTAÇÃO</a>
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 2 -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfl fadeout hidden-xs"
+                            data-x="left"
+                            data-y="bottom"
+                            data-hoffset="30"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/eco/Slides/hand-farms.png" alt="">
+                        </div>
+
+                        <div class="tp-caption lfl fadeout visible-xs"
+                            data-x="left"
+                            data-y="center"
+                            data-hoffset="700"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/eco/iphone-eco.png" alt="">
+                        </div>
+
+                        <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                            Por
+                        </div>
+                        <div class="tp-caption large_white_light sfr" data-x="690" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1400" data-easing="Power4.easeOut">
+                            Pesquisadores
+                        </div>
+                        <div class="tp-caption large_white_bold sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                            Para
+                        </div>
+                        <div class="tp-caption large_white_light sfb" data-x="690" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                            Pesquisadores
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption customin customout hidden-xs"
+                            data-x="right"
+                            data-y="center"
+                            data-hoffset="0"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-voffset="50"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/eco/Slides/family-farms.png" alt="">
+                        </div>
+
+                        <div class="tp-caption customin customout visible-xs"
+                            data-x="center"
+                            data-y="center"
+                            data-hoffset="0"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-voffset="0"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/eco/Slides/family-eco.png" alt="">
+                        </div>
+
+                        <div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+                           Interface Responsiva <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                           Ótima Experiência de Navegação
+                        </div>
+                        <div class="tp-caption small_light_white sfb hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                           <p>Desfrute de uma experiência de navegação incrível, <br> independente do dispositivo em que você esteja utilizando.</p>
+                        </div>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
-    </header><!--/header-->
 
-    <div class="modal fade" id="login-register">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header text-center emerald">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h2 class="modal-title">Entrar na sua conta</h2>
+    </header>
+
+
+    <div class="wrapper">
+        <section id="about">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Sobre</h1>
+                    <div class="divider"></div>
+                    <p>Ferramenta de Apoio à Revisão e Mapeamento Sistemático</p>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <!-- LOGIN AND REGISTER -->
-                        <div class="col-sm-6 modal-body-left">
-                            <div role="tabpanel">
-                                <!-- Nav tabs -->
-                                <ul id="modal-tab" class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active">
-                                        <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Entrar</a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#register" aria-controls="register" role="tab" data-toggle="tab">Registrar</a>
-                                    </li>
-                                </ul>
 
-                                <!-- Tab panes -->
-                                <div class="tab-content">
-                                    <!-- LOGIN PANEL -->
-                                    <div role="tabpanel" class="tab-pane fade in active" id="login">
-                                        <form id="loginForm" action="" method="POST" class="form-inline" role="form">
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="email" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1" name="email">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1" name="password">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
-                                                </div>
-                                            </div>
-                                            
-                                            <button type="submit" class="btn btn-success btn-block btn-lg">Entrar</button>
-                                            <div class="form-group col-xs-12 text-center">
-                                                <a href="#" class="login-link">Esqueceu sua senha?</a>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- REGISTER PANEL -->
-                                    <div role="tabpanel" class="tab-pane fade" id="register">
-                                        <form id="registerForm" action="" method="POST" class="form-inline" role="form">
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="text" class="form-control" placeholder="Nome" aria-describedby="basic-addon1" name="name">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="email" class="form-control" placeholder="E-mail" aria-describedby="basic-addon1" name="email">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="password" class="form-control" placeholder="Senha" aria-describedby="basic-addon1" name="password">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="input-group input-group-lg">
-                                                    <input type="password" class="form-control" placeholder="Senha (confirme)" aria-describedby="basic-addon1" name="repassword">
-                                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
-                                                </div>
-                                            </div>
-                                            
-                                            <button type="submit" class="btn btn-success btn-block btn-lg">Registrar</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa fa-clock-o fa-2x"></i>
+                            <h3>Economize Tempo</h3>
+                            <p>Foque no que realmente interessa em sua pesquisa e deixe a FARMS lhe auxiliar com o levantamento da bibliografia.</p>
                         </div>
-                        <!-- SOCIAL STUFF -->
-                        <div class="col-sm-6">
-                            <div class="modal-social-icons">
-                                <a href="#" class="btn btn-default facebook"> <i class="fa fa-facebook fa-lg modal-icons"></i> Entrar com o Facebook </a>
-                                <a href="#" class="btn btn-default twitter"> <i class="fa fa-twitter fa-lg modal-icons"></i> Entrar com o Twitter </a>
-                                <a href="#" class="btn btn-default google"> <i class="fa fa-google-plus fa-lg modal-icons"></i> Entrar com o Google </a>
-                                <a href="#" class="btn btn-default linkedin"> <i class="fa fa-linkedin fa-lg modal-icons"></i> Entrar com o Linkedin </a>
-                            </div> 
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-database fa-2x"></i>
+                            <h3>Diversas Bases de Dados</h3>
+                            <p>Faça revisões da literatura em diversas bases de dados de forma rápida e eficiente.</p>
                         </div>
-                        <div class="hidden-xs center-line"> OU </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa fa-users fa-2x"></i>
+                            <h3>Trabalhe em Equipe</h3>
+                            <p>Conte com a colaboração de outros pesquisadores e obtenha resultados mais precisos e imparciais.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa fa-heart fa-2x"></i>
+                            <h3>Open Source</h3>
+                            <p>Gratuita, colaborativa e construída utilizando-se de outras ferramentas e recursos de código aberto.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="text-center">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    </div>
-                    
+            </div>
+        </section>
+
+        <section id="getApp">
+            <div class="container-fluid">
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>Documentação</h1>
+                    <div class="divider"></div>
+                    <p>Veja as especificações e guias de instalação da ferramenta</p>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-    
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide wet-asphalt">
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-            </ol> -->
-            <div class="carousel-inner">
-                <div class="item active" style="background-color: #34495e">
-                    <div class="container">
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
+                            <img src="assets/img/bouy.png" alt="Documentação">
+                        </div>
+                        <div class="platforms">
+                            <a href="docs/" target="_blank" class="btn btn-primary inverse scrollpoint sp-effect1">
+                                <i class="fa fa-life-bouy fa-3x pull-left"></i>
+                                <span>Ir para página de</span><br>
+                                <b>Documentação</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="doublediagonal">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Receba Nossas Novidades</h1>
+                    <div class="divider"></div>
+                    <p>Assine a nossa newsletter e receba e-mails com as novidades.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="row">
-                            <div class="col-sm-12">
-                                <div class="carousel-content center centered">
-                                    <h2 class="animation animated-item-1">Ferramenta de Apoio à Revisão e Mapeamento Sistemático</h2>
-                                    <p class="animation animated-item-2">
-                                        <button type="button" class="btn btn-primary btn-transparent" data-toggle="modal" href="#login-register">CADASTRAR</button>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" href="#login-register">ENTRAR</button>
-                                    </p>
+                            <div class="col-xs-12 scrollpoint sp-effect1">
+                                <!-- Begin MailChimp Signup Form -->
+                                <div id="mc_embed_signup">
+                                    <form role="form" action="//twitter.us11.list-manage.com/subscribe/post?u=bbc36959d55a2c45695c069c3&amp;id=d0c601c4e8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div class="form-group col-md-8">
+                                                <input type="email" placeholder="Digite seu e-mail" name="EMAIL" class="email form-control input-lg" id="mce-EMAIL" placeholder="email address" required>
+                                            </div>
+                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                                <input type="text" name="b_bbc36959d55a2c45695c069c3_d0c601c4e8" tabindex="-1" value="">
+                                            </div>
+                                            <div class="clear form-group col-md-4">
+                                                <input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary btn-lg btn-block">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/.item-->
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-    </section><!--/#main-slider-->
-
-    <section id="newsletter" class="turquoise">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    <h2>Receba nossas novidades!</h2>
-                </div>
-                <div class="col-sm-8">
-                    <form method="POST" class="form-inline" role="form">
-                        <div class="form-group col-sm-8">
-                            <label class="sr-only" for="">label</label>
-                            <input type="email" class="form-control text-center" id="" placeholder="Digite aqui o seu e-mail">
-                        </div>
-                        <div class="form-group col-xs-offset-3 col-xs-6 col-sm-offset-0 col-sm-4">
-                            <button type="submit" class="btn btn-transparent btn-block">INSCREVER-SE</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section><!--/#newsletter-->
-
-    <section id="features" class="container">
-        <div><img src="images/clipboard.png" class="img-responsive" alt="Funcionalidades"></div>
-        <h1 class="center">Funcionalidades</h1>
-        <p class="lead center">Saiba o que a FARMS pode lhe proporcionar</p>
-        <div class="gap"></div>
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-clock-o icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Economize Tempo</h3>
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Um se pirulitá tem lupuliz casamentiss sapien ser mijis pa arma uma pindureta bolis eu num gostis suco de cevadiss.</p>
-                    </div>
-                </div>
-            </div><!--/.col-sm-6-->
-            <div class="col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-database icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Diversas Bases de Dados</h3>
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Gravidis porris elementis qui se pirulitá tem lupuliz, matis rum da jamaikis bolis eu num gostis!</p>
-                    </div>
-                </div>
-            </div><!--/.col-sm-6-->
-            <div class="col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-group icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Trabalhe em Equipe</h3>
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Vermeio i pareci latim quium dia faiz elementis, ser mijis e, se pirulitá tem lupuliz.</p>
-                    </div>
-                </div>
-            </div><!--/.col-sm-6-->
-            <div class="col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-heart icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Open Source</h3>
-                        <p>Mussum ipsum cacilds, vidis litro abertis. Paradis, atirei o pau no gatis, justo! Copo furadis fermentis ispecialista im mé, cevadis manduma pindureta interagi no mé.</p>
-                    </div>
-                </div>
-            </div><!--/.col-sm-6-->
-        </div>
-    </section><!--/#about-us-->
-    <hr>
-
-    <section id="cheerup" class="container">
-        <h2>Anime-se!</h2>
-        <p>Acomode-se, veja os conteúdos abaixo e descubra mais sobre o que é a FARMS e tudo que ela pode proporcionar para você, sua pesquisa, e até mesmo sua equipe. Separamos alguns conteúdos che achamos interessantes e que poderão lhe ser úteis no início dessa sua nova experiência.</p>
-
-        <div class="row">
-            <div class="col-md-6 media-content">
-                <div class="media">
-                    <div class="media-left col-xs-12 col-sm-7">
-                        <video class="video-js media-object" preload="auto" poster="images/media/video-cover.jpg" data-setup="{}">
-                            <source src="videos/big_buck_bunny.mp4" type="video/mp4">
-                            <source src="videos/big_buck_bunny.webm" type="video/webm">
-                        </video>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-5">
-                        <div class="media-body">
-                            <h3 class="media-heading">Introdução</h3>
-                            <p>Entenda exatamente do que se trata a FARMS - Ferramenta de Apoio à Revisão e Mapeamento Sistemática</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 media-content">
-                <div class="media">
-                    <div class="media-left col-xs-12 col-sm-7">
-                        <a href="javascript:void(0)">
-                            <img src="images/media/slide-cover.jpg" class="media-object img-responsive" alt="Slide">
-                        </a>
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-5">
-                        <div class="media-body">
-                            <h3 class="media-heading">Apresentação</h3>
-                            <p>Mussum ipsum cacilds, vidis litro abertis. Leite divinis bolis eu num gostis, monti palavris i pareci latim.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <section id="documentation" class="container">
-        <h2>Documentação</h2>
-
-        <div class="row">
-            <div class="col-sm-7 col-md-6">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Suco de cevadiss gravidis im ampola pa arma uma pindureta fermentis manduma pindureta é paisis, filhis, vinho nois paga i pareci latim quisso pudia, ce receita de bolis casamentiss é viva forevis pra lá leite divinis mé. Vermeio paisis, filhis im ampola interessantiss espiritis santis!</p>
-
-                <div class="row mt">
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="media-body">
-                                <h3 class="media-heading">Guias de Uso</h3>
-                                <p>Mussum ipsum cacilds, vidis litro abertis. Mais, casamentiss, só num pode. I pareci latim delegadis gente finis, pa arma uma pindureta quisso pudia elementum girarzis qui.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <div class="media">
-                            <div class="media-body">
-                                <h3 class="media-heading">Inicie</h3>
-                                <p>Mussum ipsum cacilds, vidis litro abertis. Mais uiski elementis gravidis atirei o pau no gatis, viva forevis leite divinis e é disculpa de babadis.</p>
+                                <!--End mc_embed_signup-->                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="hidden-xs col-sm-5 col-md-6">
-                <div><img src="images/bouy.png" class="img-responsive" alt="Documentação"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="bottom" class="wet-asphalt">
-        <div class="container">
-            <div class="row">
-                <div class="hidden-xs col-sm-3">
-                    <h4> </h4>
-                    <p>
-                        <i class="fa fa-leanpub fa-5x"></i>
-                    </p>
-                </div><!--/.col-sm-3-->
-
-                <div class="hidden-xs col-sm-3">
-                    <h4>Bloco 1</h4>
-                    <div>
-                        <ul class="arrow">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 2</a></li>
-                        </ul>
-                    </div>
-                </div><!--/.col-sm-3-->
-
-                <div class="col-xs-6 col-sm-3">
-                    <h4>Bloco 2</h4>
-                    <div>
-                        <ul class="arrow">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 2</a></li>
-                        </ul>
-                    </div>
-                </div><!--/.col-sm-3-->
-
-                <div class="col-xs-6 col-sm-3">
-                    <h4>Bloco 3</h4>
-                    <address>
-                        <strong>Setor</strong><br>
-                        Local<br>
-                        Cidade, UF XXXXXX<br>
-                        <!-- <abbr title="Phone">Tel.:</abbr> (123) 456-7890 -->
-                    </address>
-                </div> <!--/.col-sm-3-->
-            </div>
-        </div>
-    </section><!--/#bottom-->
-
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    Informações de Licença &copy;
+        <footer>
+            <div class="container">
+                <a href="#" class="scrollpoint sp-effect3">
+                    <img src="assets/img/farms_logo.png" alt="" class="logo">
+                </a>
+                <div class="social">
+                    <a href="https://github.com/farms" target="_blank" class="scrollpoint sp-effect3"><i class="fa fa-github fa-lg"></i></a>
+                </div>
+                <div class="rights">
+                    <p>Informações de Licença</p>
                 </div>
             </div>
-        </div>
-    </footer><!--/#footer-->
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap2.min.js"></script>
-    <script src="js/video.js"></script>
-    <script src="js/main.js"></script>
+        </footer>
+    </div>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
 </body>
 </html>
